@@ -1,0 +1,262 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.nav-bar{
+  display: flex;
+  margin-top:20px; 
+  justify-content: space-between;
+}
+
+#logo{
+  font-size: 40px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 650;
+  color: black;
+  margin:0 30px 0 30px;
+ 
+}
+.nav-items{
+  display: flex;
+  align-items: center;
+
+}
+
+.nav-items span{
+  margin: 0 40px 0 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  color: hsl(0, 0%, 41%);
+  display: inline;
+}
+.labels{
+  margin: 0 0 0 0px;
+  display: flex;
+  align-items: center;
+}
+.labels > div{
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+
+.drop-down{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: hsl(0, 0%, 41%);
+  
+}
+.row > span{
+  margin-left: -10px;
+}
+
+select{
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  align-items: center;
+ }
+.login{
+  margin: 0 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+
+}
+
+.login  span{
+  list-style:none;
+  margin:0  30px 0px 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  color:hsl(0, 0%, 41%) ;
+  
+
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.open{
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+  font-weight: 900;
+  display: none;
+  visibility: hidden;
+}
+.btn{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1.5px solid;
+  background-color: #ffff;
+  color: hsl(0, 0%, 41%);
+  box-shadow: 10px rgba(114, 110, 110, 0.2);
+}
+.menu{
+  display: none;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  visibility: hidden;
+ 
+} 
+
+ @media(max-width:700px){
+   .labels{
+      margin-top: 20px;
+      height: 100vh;
+      width: 40%;
+      position:absolute;
+      padding: 100px 10px;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      right: 0;
+      background-color: #ffffff;
+      z-index:10;
+      box-shadow: 4px 6px 5px black;
+      color:hsl(0, 0%, 89%);
+      
+   }
+   .col{
+    display: flex;
+    
+   }
+   .col > select{
+      margin-top:-10px;
+      margin-left: 5px;
+      padding: 0;
+    
+   }
+   .row{
+    display: flex;
+    flex-direction:column;
+   }
+   .login{
+     position: absolute;
+     right: 0;
+     margin: 0 auto;
+     top: 250px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     /* z-index: 10; */
+   }
+  .login  button{
+    margin-top: 20px;
+    padding: 10px 50px;
+  }
+  .labels span{
+    margin-left:-15px;
+     margin-bottom:20px;
+
+  }
+  .labels label{
+      margin-bottom:20px;
+      margin-left: -15px;
+   }
+  .menu{
+    position: absolute;
+    top: 40px;
+    right:0;
+    visibility: visible;
+  }
+  .open{
+    display: inline;
+    visibility: visible;
+    font-size: 50px;
+  }
+  }
+ 
+@media(max-width:40em){
+  .section-1{
+    width: 100%;
+  }
+  .gram{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: center !important;
+    text-align: center;
+    align-content: center !important;
+
+  }
+  .hero{
+    margin: 0 auto;
+    width: 95%;
+  }
+ 
+  .text{
+    width: 95% !important;
+    font-size: 18px !important;
+    margin: 70px auto !important;
+  }
+  .text > h1{
+    font-size: 2.5em !important;
+  }
+  .flex{
+    width: 100%;
+    margin:0 10px 0 100px !important;
+
+  }
+}
+.section-1{
+   width: 100%;
+}
+.gram{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  
+}
+.img{
+  max-width: 80%; 
+  margin-bottom: 100px;
+}
+
+.text{
+  margin-left: 100px;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 70px;
+  width: 50%;
+}
+.flex{
+  display: flex;
+  margin-left:90px;
+}
+.flex > div{
+  margin: 0 10px 0 10px;
+}
+.text > h1{
+  font-size: 3em;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text > p{
+  margin-top: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+.text > button{
+  padding: 15px 30px;
+  border: none;
+  background: black;
+  border-radius: 10px;
+  color: #ffff;
+  margin-bottom: 20px;
+}
+.hero{
+  display: flex;
+  justify-content: right;
+  margin-right: 100px;
+  margin-bottom:-135px;
+  margin-top:0px;
+} 
